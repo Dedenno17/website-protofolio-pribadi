@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  display: flex;
+  padding: 16px 18px;
+  background-color: #161616;
+  color: #eee;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.logo {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.logo > div {
+  width: 20px;
+  height: 20px;
+  background-color: #3b76f2;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.logo > h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
