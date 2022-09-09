@@ -1,14 +1,15 @@
 .header {
   width: 100%;
-  display: flex;
   padding: 24px 20px;
   background-color: #161616;
   color: #eee;
 }
 
 .container {
-  width: 100%;
+  max-width: 1033px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
 }
 

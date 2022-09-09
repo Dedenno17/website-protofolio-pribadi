@@ -1,4 +1,5 @@
 import styles from "../../styles/Header.module.css";
+import Hamburger from "./Hamburger";
 
 const Header = () => {
   return (
@@ -8,6 +9,7 @@ const Header = () => {
           <div>{/* <img src="" alt="" /> */}</div>
           <h1>AhmadDedenSetiawan</h1>
         </div>
+        <Hamburger />
       </div>
     </header>
   );
