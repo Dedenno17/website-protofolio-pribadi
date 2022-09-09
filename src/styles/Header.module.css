@@ -25,6 +25,11 @@
   background-color: #3b76f2;
   border-radius: 100%;
   margin-right: 8px;
+  overflow: hidden;
+}
+
+.logo > div > img {
+  width: 100%;
 }
 
 .logo > h1 {
