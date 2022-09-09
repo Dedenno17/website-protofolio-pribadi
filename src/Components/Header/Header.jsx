@@ -6,7 +6,7 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <div>{/* <img src="" alt="" /> */}</div>
-          <h1>Ahmad Deden Setiawan</h1>
+          <h1>AhmadDedenSetiawan</h1>
         </div>
       </div>
     </header>
