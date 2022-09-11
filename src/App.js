@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./Components/Header/Header";
+import NavLink from "./Components/Header/NavLink";
 
 function App() {
   const [isHamMenuOpen, setIsHamMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header onOpen={isHamMenuOpen} hamMenuToggle={hamMenuToggleHandler} />
+      <NavLink />
     </div>
   );
 }
