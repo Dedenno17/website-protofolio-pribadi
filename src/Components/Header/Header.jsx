@@ -2,7 +2,7 @@ import styles from "../../styles/Header.module.css";
 import Hamburger from "./Hamburger";
 import profileImage from "../../images/profile.png";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -12,7 +12,7 @@ const Header = () => {
           </div>
           <h1>AhmadDedenSetiawan</h1>
         </div>
-        <Hamburger />
+        <Hamburger onClick={props.hamMenuToggle} />
       </div>
     </header>
   );

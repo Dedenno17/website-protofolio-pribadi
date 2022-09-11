@@ -3,9 +3,13 @@ import styles from "../../styles/NavLink.module.css";
 
 const NavLinkContainer = document.getElementById("navlink");
 
-const NavLink = () => {
+const NavLink = (props) => {
+  const classes = props.onOpen
+    ? `${styles.nav} ${styles.open}`
+    : `${styles.nav}`;
+
   return createPortal(
-    <nav className={styles.nav}>
+    <nav className={classes}>
       <ul>
         <li>
           <a href="/">Home</a>

@@ -5,6 +5,8 @@
   right: 0;
   background-color: #161616;
   padding: 20px;
+  transform: translateX(100%);
+  transition: all 0.7s ease-in-out;
 }
 
 .nav ul {
@@ -35,4 +37,8 @@
 
 .nav ul li a:hover {
   color: #fb4c34;
+}
+
+.open {
+  transform: translateX(0);
 }
