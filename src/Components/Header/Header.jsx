@@ -12,7 +12,7 @@ const Header = (props) => {
           </div>
           <h1>AhmadDedenSetiawan</h1>
         </div>
-        <Hamburger onClick={props.hamMenuToggle} />
+        <Hamburger onClick={props.hamMenuToggle} onOpen={props.onOpen} />
       </div>
     </header>
   );

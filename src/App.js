@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header hamMenuToggle={hamMenuToggleHandler} />
+      <Header hamMenuToggle={hamMenuToggleHandler} onOpen={isHamMenuOpen} />
       <NavLink onOpen={isHamMenuOpen} />
     </div>
   );

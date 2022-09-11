@@ -11,4 +11,28 @@
   width: 100%;
   height: 20%;
   background-color: #eee;
+  transition: all 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburger span:first-child {
+  transform-origin: left;
+}
+
+.hamburger span:last-child {
+  transform-origin: left;
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.open span:first-child {
+  transform: rotate(30deg);
+}
+
+.open span:last-child {
+  transform: rotate(-30deg);
 }
