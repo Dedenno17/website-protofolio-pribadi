@@ -1,0 +1,104 @@
+.hero {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  padding: 44px 20px;
+}
+
+.image > div:first-child {
+  width: 200px;
+  height: 200px;
+  background-color: #f7bc3e;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.image img {
+  width: 60%;
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.image > div:nth-child(3) {
+  position: absolute;
+  top: 248px;
+  right: 52px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(251, 76, 52, 0.8);
+  border-radius: 100%;
+  z-index: 99;
+}
+
+.image > div:last-child {
+  position: absolute;
+  top: 290px;
+  left: 52px;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(57, 108, 217, 0.8);
+  border-radius: 100%;
+  z-index: 99;
+}
+
+.desc {
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.desc h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.desc div {
+  background-color: #3b76f2;
+  position: relative;
+  padding: 12px;
+  width: 67%;
+  margin: 0 auto 24px;
+}
+
+.desc div > p {
+  font-size: 1.125rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+}
+
+.desc > p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.desc button {
+  border: none;
+  outline: none;
+  background-color: #fb4c34;
+  border-radius: 15px;
+  color: #eee;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.desc button:hover {
+  filter: brightness(0.95);
+}
