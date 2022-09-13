@@ -10,7 +10,9 @@ const ProjectsItem = (props) => {
       <div>
         <h3>{props.title}</h3>
         <span>
-          <a href={props.link}>View details</a>
+          <a href={props.link} target="__blank">
+            View details
+          </a>
           <img src={angleRight} alt="angle right" />
         </span>
       </div>
