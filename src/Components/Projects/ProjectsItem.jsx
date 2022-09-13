@@ -1,12 +1,18 @@
+import angleRight from "../../images/angle-right-solid.svg";
+
 const ProjectsItem = (props) => {
   return (
-    <div>
-      <div></div>
+    <div id={props.id}>
       <div>
-        <h3>Project Name</h3>
-        <a href="/">
+        <img src={props.image} alt="project" />
+      </div>
+      <div>
+        <h3>{props.title}</h3>
+        <a href={props.link}>
           <p>View details</p>
-          <span></span>
+          <span>
+            <img src={angleRight} alt="angle right" />
+          </span>
         </a>
       </div>
     </div>
