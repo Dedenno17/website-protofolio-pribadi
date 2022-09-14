@@ -1,4 +1,5 @@
 import styles from "../../styles/Contact.module.css";
+import Button from "../UI/Button";
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <span>
         <a href="/">Whats app</a>
-        <button>Email me</button>
+        <Button type="button">Email me</Button>
       </span>
     </div>
   );
