@@ -1,5 +1,6 @@
 import profile from "../../images/profile.png";
 import styles from "../../styles/Hero.module.css";
+import Button from "../UI/Button";
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
           <br /> consectetur adipiscing elit. Rutrum
           <br /> sed at dictumst integer
         </p>
-        <button type="button">Contact</button>
+        <Button type="button">Contact</Button>
       </div>
     </div>
   );
