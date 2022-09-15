@@ -1,4 +1,5 @@
 import { useState } from "react";
+import About from "./Components/About/About";
 
 import Contact from "./Components/Contact/Contact";
 import Header from "./Components/Header/Header";
@@ -20,6 +21,7 @@ function App() {
         <Hero />
         <Projects />
         <Contact />
+        <About />
       </main>
       <NavLink onOpen={isHamMenuOpen} />
     </div>
