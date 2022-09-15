@@ -3,12 +3,13 @@ import facebook from "../../images/facebook-f.svg";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin-in.svg";
 import github from "../../images/github.svg";
+import styles from "../../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div>
-        <div>
+        <div className={styles.title}>
           <div>
             <img src={profile} alt="profile" />
           </div>
@@ -17,7 +18,7 @@ const Footer = () => {
             <p>Front-End Web Developer</p>
           </div>
         </div>
-        <div>
+        <div className={styles.links}>
           <ul>
             <li>
               <a href="/">Home</a>
@@ -34,16 +35,30 @@ const Footer = () => {
           </ul>
           <ul>
             <li>
-              <img src={facebook} alt="fb" />
+              <a
+                href="https://www.facebook.com/ahmaddeden.setiawan.7"
+                target="__blank"
+              >
+                <img src={facebook} alt="fb" />
+              </a>
             </li>
             <li>
-              <img src={instagram} alt="ig" />
+              <a href="https://www.instagram.com/ahmaddedens/" target="__blank">
+                <img src={instagram} alt="ig" />
+              </a>
             </li>
             <li>
-              <img src={linkedin} alt="in" />
+              <a
+                href="https://www.linkedin.com/in/ahmad-deden-setiawan-094a311bb/"
+                target="__blank"
+              >
+                <img src={linkedin} alt="in" />
+              </a>
             </li>
             <li>
-              <img src={github} alt="github" />
+              <a href="https://github.com/Dedenno17" target="__blank">
+                <img src={github} alt="github" />
+              </a>
             </li>
           </ul>
         </div>
