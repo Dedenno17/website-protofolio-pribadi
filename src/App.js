@@ -25,7 +25,7 @@ function App() {
         <About />
       </main>
       <Footer />
-      <NavLink onOpen={isHamMenuOpen} />
+      <NavLink onOpen={isHamMenuOpen} hamMenuToggle={hamMenuToggleHandler} />
     </div>
   );
 }
