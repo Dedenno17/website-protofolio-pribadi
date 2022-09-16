@@ -5,10 +5,14 @@ const ProjectsItem = (props) => {
   return (
     <div id={props.id} className={styles.projectsItem}>
       <div>
-        <img src={props.image} alt="project" />
+        <a href={props.link}>
+          <img src={props.image} alt="project" />
+        </a>
       </div>
       <div>
-        <h3>{props.title}</h3>
+        <h3>
+          <a href={props.link}>{props.title}</a>
+        </h3>
         <span>
           <a href={props.link} target="__blank">
             View details

@@ -27,10 +27,11 @@
   padding: 14px 0;
 }
 
-.projectsItem > div:last-child h3 {
+.projectsItem > div:last-child h3 a {
   color: #eee;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .projectsItem > div:last-child h3:hover {
