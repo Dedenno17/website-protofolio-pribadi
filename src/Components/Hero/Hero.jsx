@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="home">
       <div className={styles.image}>
         <div></div>
         <img src={profile} alt="hero profile" />
@@ -17,11 +17,12 @@ const Hero = () => {
           <p>Front-End Web Developer</p>
         </div>
         <p>
-          Lorem ipsum dolor sit amet,
-          <br /> consectetur adipiscing elit. Rutrum
-          <br /> sed at dictumst integer
+          Indonesian developer who build beautiful and interactive web
+          applications using popular frameworks and tools
         </p>
-        <Button type="button">Contact</Button>
+        <a href="#contact">
+          <Button type="button">Contact</Button>
+        </a>
       </div>
     </div>
   );

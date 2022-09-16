@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <h2>Contact</h2>
       <span>
         <a href="/">Whats app</a>
