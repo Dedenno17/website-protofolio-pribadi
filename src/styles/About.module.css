@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
-  padding: 24px;
+  padding: 52px 24px;
 }
 
 .about > div:first-child {
@@ -20,6 +20,7 @@
 
 .about > div:first-child p {
   color: #eee;
+  line-height: 24px;
   margin-bottom: 24px;
 }
 

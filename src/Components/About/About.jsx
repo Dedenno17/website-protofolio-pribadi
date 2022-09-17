@@ -1,6 +1,7 @@
 import Button from "../UI/Button";
 import profile from "../../images/profile.png";
 import styles from "../../styles/About.module.css";
+import resume from "../../images/Resume.pdf";
 
 const About = () => {
   return (
@@ -8,12 +9,14 @@ const About = () => {
       <div>
         <h2>About me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam elit
-          vel, ultrices diam. Libero sed justo ultrices dictumst penatibus
-          interdum urna. Urna sit gravida fames rhoncus sit tortor adipiscing
-          ut. Adipiscing pretium vitae fringilla faucibus{" "}
+          Create an attractive & interactive website display, by mastering
+          several tools that support the development of a web application & has
+          been certified by parties who have credibility on web development
+          field{" "}
         </p>
-        <Button type="button">Download CV</Button>
+        <a href={resume} download="resume">
+          <Button type="button">Download CV</Button>
+        </a>
       </div>
       <div>
         <img src={profile} alt="profile" />
