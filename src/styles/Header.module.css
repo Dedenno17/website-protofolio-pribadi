@@ -1,8 +1,10 @@
 .header {
   width: 100%;
   padding: 24px 20px;
-  background-color: #161616;
+  background-color: rgba(22, 22, 22, 0.95);
   color: #eee;
+  z-index: 999;
+  opacity: 1;
 }
 
 .container {
@@ -35,4 +37,21 @@
 .logo > h1 {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: fade 0.3s ease-in-out forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
