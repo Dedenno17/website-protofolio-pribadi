@@ -1,12 +1,16 @@
 import profile from "../../images/profile.png";
 import styles from "../../styles/Hero.module.css";
 import Button from "../UI/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className={styles.hero} id="home">
       <div className={styles.image}>
-        <div></div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        ></motion.div>
         <img src={profile} alt="hero profile" />
         <div></div>
         <div></div>
