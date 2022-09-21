@@ -86,3 +86,22 @@
   line-height: 1.3rem;
   margin-bottom: 20px;
 }
+
+/* tablet size */
+@media screen and (min-width: 427px) {
+  .hero {
+    flex-direction: row-reverse;
+  }
+
+  .desc {
+    text-align: left;
+  }
+
+  .desc div {
+    margin: 0 10px 24px;
+  }
+
+  .desc div > p {
+    font-size: 1rem;
+  }
+}
