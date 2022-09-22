@@ -18,3 +18,9 @@
   grid-template-columns: 1fr;
   gap: 20px;
 }
+
+@media screen and (min-width: 427px) {
+  .projects > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

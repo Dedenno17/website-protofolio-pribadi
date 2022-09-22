@@ -58,3 +58,10 @@
   filter: invert(47%) sepia(57%) saturate(5343%) hue-rotate(341deg)
     brightness(100%) contrast(98%);
 }
+
+/* tablet size */
+@media screen and (min-width: 427px) {
+  .projectsItem > div:last-child > span {
+    width: 25%;
+  }
+}
