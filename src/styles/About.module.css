@@ -49,3 +49,14 @@
   width: 50%;
   transform: translateX(-50%);
 }
+
+/* tablet size */
+@media screen and (min-width: 427px) {
+  .about {
+    flex-direction: row;
+  }
+
+  .about > div:first-child {
+    text-align: left;
+  }
+}
