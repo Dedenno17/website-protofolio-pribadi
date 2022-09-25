@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import styles from "../../styles/Header.module.css";
 import Hamburger from "./Hamburger";
 import profileImage from "../../images/profile.png";
+import Links from "./Links";
 
 const Header = (props) => {
   const [scrollY, setScrollY] = useState(null);
@@ -31,6 +32,7 @@ const Header = (props) => {
           </div>
           <h1>AhmadDedenSetiawan</h1>
         </div>
+        <Links />
         <Hamburger onClick={props.hamMenuToggle} onOpen={props.onOpen} />
       </div>
     </header>

@@ -36,3 +36,10 @@
 .open span:last-child {
   transform: rotate(-30deg);
 }
+
+/* pc size */
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
