@@ -19,8 +19,16 @@
   gap: 20px;
 }
 
+/* talbet size */
 @media screen and (min-width: 427px) {
   .projects > div {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* pc size */
+@media screen and (min-width: 1024px) {
+  .projects > div:nth-child(2) {
+    display: none;
   }
 }
