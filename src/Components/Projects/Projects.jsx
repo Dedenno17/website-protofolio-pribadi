@@ -6,6 +6,7 @@ import colorGuess from "../../images/color-guess.png";
 import foodOrder from "../../images/food-order.png";
 import memoryGame from "../../images/memory-game.png";
 import todo from "../../images/to-do.png";
+import Carousel from "./Carousel";
 
 const dataProjects = [
   {
@@ -48,6 +49,9 @@ const Projects = () => {
             link={item.link}
           />
         ))}
+      </div>
+      <div>
+        <Carousel dataProjects={dataProjects} />
       </div>
     </div>
   );

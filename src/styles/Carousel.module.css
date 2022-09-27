@@ -1,0 +1,62 @@
+.swiper {
+  max-width: 1033px;
+  height: 400px;
+}
+
+.swiperSlider > div:first-child {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.swiperSlider > div:first-child img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  object-fit: fill;
+}
+
+.swiperSlider > div:first-child img:hover {
+  transform: scale(1.2);
+}
+
+.swiperSlider > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.swiperSlider > div:last-child h3 a {
+  color: #eee;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.swiperSlider > div:last-child h3:hover {
+  filter: brightness(0.9);
+}
+
+.swiperSlider > div:last-child span {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fb4c34;
+  cursor: pointer;
+}
+
+.swiperSlider > div:last-child span a {
+  color: #fb4c34;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.swiperSlider > div:last-child span img {
+  width: 10%;
+  filter: invert(47%) sepia(57%) saturate(5343%) hue-rotate(341deg)
+    brightness(100%) contrast(98%);
+}
