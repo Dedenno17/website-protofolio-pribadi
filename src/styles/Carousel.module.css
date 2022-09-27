@@ -1,6 +1,19 @@
-.swiper {
+.carousel {
+  display: none;
+  margin: auto;
   max-width: 1033px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper {
+  width: 850px;
   height: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiperSlider > div:first-child {
@@ -59,4 +72,37 @@
   width: 10%;
   filter: invert(47%) sepia(57%) saturate(5343%) hue-rotate(341deg)
     brightness(100%) contrast(98%);
+}
+
+.carousel > span {
+  width: 3%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333333;
+  display: flex;
+  cursor: pointer;
+}
+
+.carousel > span:first-child {
+  left: 0;
+}
+
+.carousel > span:last-child {
+  right: 0;
+}
+
+.carousel > span img {
+  margin: auto;
+  width: 50%;
+  filter: invert(99%) sepia(2%) saturate(74%) hue-rotate(85deg) brightness(114%)
+    contrast(87%);
+}
+
+/* pc size */
+@media screen and (min-width: 1024px) {
+  .carousel {
+    display: flex;
+  }
 }

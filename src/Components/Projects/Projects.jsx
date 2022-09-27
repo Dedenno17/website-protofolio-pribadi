@@ -50,9 +50,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <div>
-        <Carousel dataProjects={dataProjects} />
-      </div>
+      <Carousel dataProjects={dataProjects} />
     </div>
   );
 };

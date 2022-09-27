@@ -19,11 +19,6 @@
   gap: 20px;
 }
 
-.projects > div:last-child {
-  display: none;
-  width: 100%;
-}
-
 /* talbet size */
 @media screen and (min-width: 427px) {
   .projects > div {
@@ -39,9 +34,5 @@
 
   .projects > div:nth-child(2) {
     display: none;
-  }
-
-  .projects > div:last-child {
-    display: block;
   }
 }
