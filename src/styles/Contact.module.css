@@ -3,29 +3,61 @@
   padding: 24px;
   background-color: #383838;
   display: flex;
+}
+
+.contact > div {
+  margin: auto;
+  width: 75%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.contact h2 {
+.contact > div h2 {
   font-size: 2rem;
   font-weight: 600;
   color: #eee;
   margin-bottom: 32px;
 }
 
-.contact > span {
+.contact > div > span {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.contact > span a {
+.contact > div > span a {
   color: #eee;
 }
 
-.contact > span a:hover {
+.contact > div > span a:hover {
   color: #fb4c34;
+}
+
+/* pc Size */
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 80px 0;
+  }
+
+  .contact > div {
+    flex-direction: row;
+  }
+
+  .contact > div h2 {
+    margin-bottom: 0;
+  }
+
+  .contact > div > span {
+    width: 50%;
+  }
+}
+
+/* 4k Size */
+@media screen and (min-width: 1440px) {
+  .contact > div {
+    width: 1033px;
+  }
 }
