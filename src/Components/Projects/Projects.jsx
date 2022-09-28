@@ -1,3 +1,4 @@
+import { useEffect, useCallback, useState } from "react";
 import styles from "../../styles/Projects.module.css";
 import ProjectsItem from "./ProjectsItem";
 
@@ -36,6 +37,20 @@ const dataProjects = [
 ];
 
 const Projects = () => {
+  const [screenWidth, setScreenWidth] = useState(null);
+
+  const resizeHandler = useCallback(function () {
+    setScreenWidth(this.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", resizeHandler);
+
+    return () => {
+      window.removeEventListener("scroll", resizeHandler, true);
+    };
+  }, [resizeHandler]);
+
   return (
     <div className={styles.projects} id="projects">
       <h2>Projects</h2>
@@ -50,7 +65,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <Carousel dataProjects={dataProjects} />
+      {screenWidth >= 1024 && <Carousel dataProjects={dataProjects} />}
     </div>
   );
 };
