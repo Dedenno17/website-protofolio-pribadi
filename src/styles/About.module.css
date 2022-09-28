@@ -60,3 +60,10 @@
     text-align: left;
   }
 }
+
+/* pc size */
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 144px 24px;
+  }
+}
