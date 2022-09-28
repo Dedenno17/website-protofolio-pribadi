@@ -28,6 +28,10 @@
 
 /* pc size */
 @media screen and (min-width: 1024px) {
+  .projects {
+    padding: 80px 24px 114px;
+  }
+
   .projects h2 {
     margin: 64px 0 52px;
   }
