@@ -1,36 +1,41 @@
 .about {
   width: 100%;
+}
+
+.container {
+  max-width: 1033px;
+  margin: auto;
   display: flex;
   flex-direction: column-reverse;
   padding: 52px 24px;
 }
 
-.about > div:first-child {
+.about > .container > div:first-child {
   width: 100%;
   padding: 20px;
   text-align: center;
 }
 
-.about > div:first-child h2 {
+.about > .container > div:first-child h2 {
   font-size: 2rem;
   color: #eee;
   font-weight: 600;
   margin-bottom: 24px;
 }
 
-.about > div:first-child p {
+.about > .container > div:first-child p {
   color: #eee;
   line-height: 24px;
   margin-bottom: 24px;
 }
 
-.about > div:last-child {
+.about > .container > div:last-child {
   width: 100%;
   height: 255px;
   position: relative;
 }
 
-.about > div:last-child::after {
+.about > .container > div:last-child::after {
   content: "";
   position: absolute;
   background-color: #f7bc3e;
@@ -41,7 +46,7 @@
   border-radius: 15px;
 }
 
-.about > div:last-child img {
+.about > .container > div:last-child img {
   position: absolute;
   z-index: 99;
   bottom: 0;
@@ -52,22 +57,29 @@
 
 /* tablet size */
 @media screen and (min-width: 427px) {
-  .about {
+  .about > .container {
     flex-direction: row;
   }
 
-  .about > div:first-child {
+  .about > .container > div:first-child {
     text-align: left;
   }
 }
 
 /* pc size */
 @media screen and (min-width: 1024px) {
-  .about {
+  .about > .container {
     padding: 144px 24px;
   }
 
-  .about > div:last-child::after {
+  .about > .container > div:last-child::after {
     top: 10%;
+  }
+}
+
+/* 4k size */
+@media screen and (min-width: 1440px) {
+  .about > .container {
+    padding: 220px 24px;
   }
 }
