@@ -1,10 +1,15 @@
 .footer {
   width: 100%;
   background-color: #383838;
+}
+
+.container {
+  max-width: 1033px;
+  margin: auto;
   padding: 36px 44px 20px;
 }
 
-.footer > div:first-child {
+.footer > .container > div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,7 +101,7 @@
     brightness(114%) contrast(87%);
 }
 
-.footer > span:last-child {
+.footer > .container > span:last-child {
   width: 100%;
   padding: 14px;
   text-align: center;
@@ -110,7 +115,7 @@
     border-radius: 50px 50px 0 0;
   }
 
-  .footer > div:first-child {
+  .footer > .container > div:first-child {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 64px;

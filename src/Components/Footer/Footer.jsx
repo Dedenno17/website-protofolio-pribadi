@@ -8,64 +8,69 @@ import styles from "../../styles/Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div>
-        <div className={styles.title}>
-          <div>
-            <img src={profile} alt="profile" />
+      <div className={styles.container}>
+        <div>
+          <div className={styles.title}>
+            <div>
+              <img src={profile} alt="profile" />
+            </div>
+            <div>
+              <h2>Ahmad Deden Setiawan</h2>
+              <p>Front-End Web Developer</p>
+            </div>
           </div>
-          <div>
-            <h2>Ahmad Deden Setiawan</h2>
-            <p>Front-End Web Developer</p>
+          <div className={styles.links}>
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/ahmaddeden.setiawan.7"
+                  target="__blank"
+                >
+                  <img src={facebook} alt="fb" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ahmaddedens/"
+                  target="__blank"
+                >
+                  <img src={instagram} alt="ig" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ahmad-deden-setiawan-094a311bb/"
+                  target="__blank"
+                >
+                  <img src={linkedin} alt="in" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Dedenno17" target="__blank">
+                  <img src={github} alt="github" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className={styles.links}>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/ahmaddeden.setiawan.7"
-                target="__blank"
-              >
-                <img src={facebook} alt="fb" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/ahmaddedens/" target="__blank">
-                <img src={instagram} alt="ig" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ahmad-deden-setiawan-094a311bb/"
-                target="__blank"
-              >
-                <img src={linkedin} alt="in" />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Dedenno17" target="__blank">
-                <img src={github} alt="github" />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <span>
+          <p>&copy; 2022 Ahmad Deden Setiawan. All right reserved</p>
+        </span>
       </div>
-      <span>
-        <p>&copy; 2022 Ahmad Deden Setiawan. All right reserved</p>
-      </span>
     </footer>
   );
 };
