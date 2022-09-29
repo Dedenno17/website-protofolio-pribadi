@@ -66,4 +66,8 @@
   .about {
     padding: 144px 24px;
   }
+
+  .about > div:last-child::after {
+    top: 10%;
+  }
 }
