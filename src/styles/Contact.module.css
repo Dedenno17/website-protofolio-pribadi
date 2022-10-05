@@ -39,7 +39,7 @@
 /* pc Size */
 @media screen and (min-width: 1024px) {
   .contact {
-    padding: 80px 0;
+    padding: 112px 0;
   }
 
   .contact > div {
@@ -48,6 +48,7 @@
 
   .contact > div h2 {
     margin-bottom: 0;
+    font-size: 3rem;
   }
 
   .contact > div > span {
