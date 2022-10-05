@@ -69,7 +69,7 @@
 /* pc size */
 @media screen and (min-width: 1024px) {
   .about > .container {
-    padding: 144px 24px;
+    padding: 214px 24px;
   }
 
   .about > .container > div:last-child::after {

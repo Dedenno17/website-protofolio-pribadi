@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Button from "../UI/Button";
 import profile from "../../images/profile.png";
 import styles from "../../styles/About.module.css";
@@ -7,7 +9,11 @@ const About = () => {
   return (
     <div className={styles.about} id="about">
       <div className={styles.container}>
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.8 }}
+        >
           <h2>About me</h2>
           <p>
             Create an attractive & interactive website display, by mastering
@@ -18,10 +24,14 @@ const About = () => {
           <a href={resume} download="resume">
             <Button type="button">Download CV</Button>
           </a>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
           <img src={profile} alt="profile" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
