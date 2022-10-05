@@ -51,6 +51,10 @@ const Projects = () => {
     };
   }, [resizeHandler]);
 
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+  }, []);
+
   return (
     <div className={styles.projects} id="projects">
       <h2>Projects</h2>
