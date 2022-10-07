@@ -2,6 +2,7 @@ import profile from "../../images/profile.png";
 import styles from "../../styles/Hero.module.css";
 import Button from "../UI/Button";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   const descVariant = {
@@ -72,9 +73,15 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.h2 variants={descVariant}>
-          Hello, I’m Ahmad Deden Setiawan
-        </motion.h2>
+        <motion.div variants={descVariant}>
+          <Typewriter
+            options={{
+              strings: ["Hello, I’m Ahmad Deden Setiawan"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </motion.div>
         <motion.div variants={descVariant}>
           <p>Front-End Web Developer</p>
         </motion.div>
