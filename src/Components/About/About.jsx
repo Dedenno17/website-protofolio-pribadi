@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import Button from "../UI/Button";
-import profile from "../../images/profile.png";
+import profile from "../../images/profile-foto.png";
 import styles from "../../styles/About.module.css";
 import resume from "../../images/Resume.pdf";
 

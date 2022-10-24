@@ -1,4 +1,4 @@
-import profile from "../../images/profile.png";
+import profile from "../../images/profile-foto.png";
 import facebook from "../../images/facebook-f.svg";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin-in.svg";

@@ -22,6 +22,9 @@
 }
 
 .logo > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   background-color: #3b76f2;
@@ -31,7 +34,8 @@
 }
 
 .logo > div > img {
-  width: 100%;
+  margin-top: 20px;
+  width: 130%;
 }
 
 .logo > h1 {

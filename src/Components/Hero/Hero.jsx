@@ -1,4 +1,4 @@
-import profile from "../../images/profile.png";
+import profile from "../../images/profile-foto.png";
 import styles from "../../styles/Hero.module.css";
 import Button from "../UI/Button";
 import { motion } from "framer-motion";
