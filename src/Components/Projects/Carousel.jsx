@@ -45,7 +45,7 @@ export default function Carousel(props) {
           >
             <div>
               <a href={item.slug}>
-                <img src={item.image} alt="projects" />
+                <img src={item.image} alt="projects" loading="lazy" />
               </a>
             </div>
             <div>

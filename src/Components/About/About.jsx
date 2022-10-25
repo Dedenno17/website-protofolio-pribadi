@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import Button from "../UI/Button";
-import profile from "../../images/profile-foto.png";
+import profile from "../../images/profile-foto.webp";
 import styles from "../../styles/About.module.css";
 import resume from "../../images/Resume.pdf";
 
@@ -30,7 +30,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          <img src={profile} alt="profile" />
+          <img src={profile} alt="profile" loading="lazy" />
         </motion.div>
       </div>
     </div>

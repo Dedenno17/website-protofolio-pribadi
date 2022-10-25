@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import styles from "../../styles/Header.module.css";
 import Hamburger from "./Hamburger";
-import profileImage from "../../images/profile-foto.png";
+import profileImage from "../../images/profile-foto.webp";
 import Links from "./Links";
 
 const Header = (props) => {

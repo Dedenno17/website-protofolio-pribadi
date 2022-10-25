@@ -1,4 +1,4 @@
-import profile from "../../images/profile-foto.png";
+import profile from "../../images/profile-foto.webp";
 import facebook from "../../images/facebook-f.svg";
 import instagram from "../../images/instagram.svg";
 import linkedin from "../../images/linkedin-in.svg";
@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
           <div className={styles.title}>
             <div>
-              <img src={profile} alt="profile" />
+              <img src={profile} alt="profile" loading="lazy" />
             </div>
             <div>
               <h2>Ahmad Deden Setiawan</h2>
