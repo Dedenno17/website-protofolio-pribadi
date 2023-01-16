@@ -7,6 +7,7 @@ import colorGuess from "../../images/color-guess.png";
 import foodOrder from "../../images/food-order.png";
 import memoryGame from "../../images/memory-game.png";
 import todo from "../../images/to-do.png";
+import movieApp from "../../images/movie-app.png";
 import Carousel from "./Carousel";
 
 const dataProjects = [
@@ -33,6 +34,12 @@ const dataProjects = [
     title: "To do App",
     image: todo,
     link: "https://deden-todo-react-app.netlify.app/",
+  },
+  {
+    id: Math.random() + 1 + "",
+    title: "Movie-app",
+    image: movieApp,
+    link: "https://movie-app-clone-six.vercel.app/",
   },
 ];
 
