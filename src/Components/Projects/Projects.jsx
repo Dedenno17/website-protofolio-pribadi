@@ -1,45 +1,52 @@
-import { useEffect, useCallback, useState } from "react";
-import styles from "../../styles/Projects.module.css";
-import ProjectsItem from "./ProjectsItem";
+import { useEffect, useCallback, useState } from 'react';
+import styles from '../../styles/Projects.module.css';
+import ProjectsItem from './ProjectsItem';
 
 // images
-import colorGuess from "../../images/color-guess.png";
-import foodOrder from "../../images/food-order.png";
-import memoryGame from "../../images/memory-game.png";
-import todo from "../../images/to-do.png";
-import movieApp from "../../images/movie-app.png";
-import Carousel from "./Carousel";
+import colorGuess from '../../images/color-guess.png';
+import foodOrder from '../../images/food-order.png';
+import memoryGame from '../../images/memory-game.png';
+import todo from '../../images/to-do.png';
+import movieApp from '../../images/movie-app.png';
+import admin from '../../images/admin.png';
+import Carousel from './Carousel';
 
 const dataProjects = [
   {
-    id: Math.random() + 1 + "",
-    title: "Color Guessing Game",
+    id: Math.random() + 1 + '',
+    title: 'Color Guessing Game',
     image: colorGuess,
-    link: "https://deden-color-guessing-game-react-app.netlify.app/",
+    link: 'https://deden-color-guessing-game-react-app.netlify.app/',
   },
   {
-    id: Math.random() + 1 + "",
-    title: "Simple Food Order App",
+    id: Math.random() + 1 + '',
+    title: 'Simple Food Order App',
     image: foodOrder,
-    link: "https://deden-food-order-app.netlify.app/",
+    link: 'https://deden-food-order-app.netlify.app/',
   },
   {
-    id: Math.random() + 1 + "",
-    title: "Memory Game",
+    id: Math.random() + 1 + '',
+    title: 'Memory Game',
     image: memoryGame,
-    link: "https://deden-memory-game-react.netlify.app/",
+    link: 'https://deden-memory-game-react.netlify.app/',
   },
   {
-    id: Math.random() + 1 + "",
-    title: "To do App",
+    id: Math.random() + 1 + '',
+    title: 'To do App',
     image: todo,
-    link: "https://deden-todo-react-app.netlify.app/",
+    link: 'https://deden-todo-react-app.netlify.app/',
   },
   {
-    id: Math.random() + 1 + "",
-    title: "Movie-app",
+    id: Math.random() + 1 + '',
+    title: 'Movie-app',
     image: movieApp,
-    link: "https://movie-app-clone-six.vercel.app/",
+    link: 'https://movie-app-clone-six.vercel.app/',
+  },
+  {
+    id: Math.random() + 1 + '',
+    title: 'Admin-dashboard',
+    image: admin,
+    link: 'https://admin-dashboard-fullstack.netlify.app/dashboard',
   },
 ];
 
@@ -51,10 +58,10 @@ const Projects = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("resize", resizeHandler);
+    window.addEventListener('resize', resizeHandler);
 
     return () => {
-      window.removeEventListener("scroll", resizeHandler, true);
+      window.removeEventListener('scroll', resizeHandler, true);
     };
   }, [resizeHandler]);
 
