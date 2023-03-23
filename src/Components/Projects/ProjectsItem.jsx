@@ -1,10 +1,10 @@
-import angleRight from "../../images/angle-right-solid.svg";
-import styles from "../../styles/ProjectsItem.module.css";
+import angleRight from '../../images/angle-right-solid.svg';
+import styles from '../../styles/ProjectsItem.module.css';
 
 const ProjectsItem = (props) => {
   return (
     <div id={props.id} className={styles.projectsItem}>
-      <div>
+      <div onClick={() => console.log(props.title)}>
         <a href={props.link}>
           <img src={props.image} alt="project" />
         </a>

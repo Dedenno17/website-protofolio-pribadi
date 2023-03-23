@@ -8,7 +8,7 @@ import foodOrder from '../../images/food-order.png';
 import memoryGame from '../../images/memory-game.png';
 import todo from '../../images/to-do.png';
 import movieApp from '../../images/movie-app.png';
-import admin from '../../images/admin.png';
+import admin from '../../images/admin-dashboard.png';
 import Carousel from './Carousel';
 
 const dataProjects = [
@@ -46,7 +46,7 @@ const dataProjects = [
     id: Math.random() + 1 + '',
     title: 'Admin-dashboard',
     image: admin,
-    link: 'https://admin-dashboard-fullstack.netlify.app/dashboard',
+    link: 'https://admin-dashboard-fullstack.netlify.app/',
   },
 ];
 

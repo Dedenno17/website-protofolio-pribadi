@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper';
 
-import "swiper/css";
-import "swiper/css/autoplay";
-import styles from "../../styles/Carousel.module.css";
-import angleRight from "../../images/angle-right-solid.svg";
-import angleLeft from "../../images/angle-left-solid.svg";
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import styles from '../../styles/Carousel.module.css';
+import angleRight from '../../images/angle-right-solid.svg';
+import angleLeft from '../../images/angle-left-solid.svg';
 
 export default function Carousel(props) {
   const prevBtnRef = useRef(null);
@@ -40,20 +40,20 @@ export default function Carousel(props) {
       >
         {props.dataProjects.map((item, i) => (
           <SwiperSlide
-            key={Math.random() + i + ""}
+            key={Math.random() + i + ''}
             className={styles.swiperSlider}
           >
             <div>
-              <a href={item.slug}>
+              <a href={item.link} target="__blank">
                 <img src={item.image} alt="projects" loading="lazy" />
               </a>
             </div>
             <div>
               <h3>
-                <a href={item.slug}>{item.title}</a>
+                <a href={item.link}>{item.title}</a>
               </h3>
               <span>
-                <a href={item.slug} target="__blank">
+                <a href={item.link} target="__blank">
                   View details
                 </a>
                 <img src={angleRight} alt="angle right" />
