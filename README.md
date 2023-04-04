@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 This is a Webiste for Ahmad Deden Setiawan Prortofolio
 using ReactJs and TailwindCss
+and using typescript
